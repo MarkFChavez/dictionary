@@ -1,6 +1,6 @@
 # Dictionary
 
-### Get a random word
+## Get a random word
 ```elixir
 # returns a string/binary
 Dictionary.random_word
