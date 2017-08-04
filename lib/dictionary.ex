@@ -6,13 +6,14 @@ defmodule Dictionary do
   end
 
   defp word_list do
-    src
+    src()
+    |> Path.expand(__DIR__)
     |> File.read!()
     |> String.split(~r/\n/)
   end
 
   defp src do
-    "assets/words.txt"
+    "../assets/words.txt"
   end
 
 end
